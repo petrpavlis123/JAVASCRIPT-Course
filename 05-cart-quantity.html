@@ -2,16 +2,17 @@
 <html>
   <head>
     <title>Cart Quantity </title>
-    
-  </head>
-    
-  <body>
-    
-<button onclick=" 
-  console.log('Cart quantity: 0');  
-  ">Show Quantity</button>
-<button>Add to Card</button>
+   </head>
+   <body>   
+    <button onclick=" 
+      console.log (`Cart quantity:${cardQuantity}`);  
+      ">Show Quantity</button>
+<button onclick="cardQuantity =  cardQuantity + 1
+console.log (`Cart quantity:${cardQuantity}`); 
+";>Add to Card</button>
 <button>+2</button>
+
+
 <button>+3</button>
 <button>Reset Card</button>
    <script>
