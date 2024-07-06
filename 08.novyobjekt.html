@@ -14,12 +14,21 @@
   
 
   ">Paper</button>
-  <button onclick=" 
- 
+  <button onclick="
+  
     playGame ('scissors') 
   ">Scissors</button>
+
+  <button onclick="
+  
+  score.wins = 0;
+  score.losses = 0;
+  score.ties = 0;
+
+  ">Reset Score </button>
   
   <script>
+
     const score = {
      wins:0,
      losses:0,
@@ -73,7 +82,7 @@
 
    
 
-      alert(`You picked ${playerMove}. Computrer picked ${computerMove}.${result}
+      alert(`You picked ${playerMove}. Computer picked ${computerMove}.${result}
       Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}.`); 
 
    }
@@ -94,7 +103,17 @@
 
    return computerMove;
 
+      function resetScore() {
+      score.wins = 0;
+      score.losses = 0;
+      score.ties = 0;
+      alert("Skóre bylo resetováno.\nWins: 0, Losses: 0, Ties: 0.");
+    }
+
+
 }
+
+
 
   </script>
 </body>
