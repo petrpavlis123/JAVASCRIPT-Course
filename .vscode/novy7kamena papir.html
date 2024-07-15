@@ -3,38 +3,26 @@
 <head>
   <title>Kamnenuzkypapir </title>
 </head>
-<body>
+<body> 
   <p> Rock Paper Scissors</p>
-  <button onclick="
-  playGame ('rock')
-   ">Rock</button>
-  
-  <button onclick="
-  playGame ('paper')
-  
-
-  ">Paper</button>
-  <button onclick=" 
- 
-    playGame ('scissors') 
-  ">Scissors</button>
+  <button onclick="playGame('rock')">Rock</button>
+  <button onclick="playGame('paper')">Paper</button>
+  <button onclick="playGame('scissors')">Scissors</button>
   
   <script>
       
    function playGame( playerMove) {
+       const computerMove = pickComputerMove();
+       let result = '';
    
-    const computerMove = pickComputerMove();
-     
-   let result = '';
-   
-    if (playerMove ==='scissors') { if(computerMove === 'rock') {
-      result = 'You lose.';
+    if (playerMove ==='rock') { if(computerMove === 'rock') {
+      result = 'Tie.';
      } 
      else if (computerMove === 'paper') {
-       result =' You win.';
+       result =' You lose.';
      }
       else if (computerMove === 'scissors') {
-       'Tigh.';
+       'You win.';
       }
 
      } else if (playerMove === 'paper') {
@@ -50,11 +38,11 @@
         
       } else if (playerMove ==='scissors' ) {
         if(computerMove === 'rock') {
-       result = 'Tie.';
+       result = 'You lose.';
       } else if (computerMove === 'paper') {
-        result ='You lose.';
+        result ='You win.';
       } else if (computerMove === 'scissors') {
-        'You win.';
+        'Tie.';
        }
       }
 
